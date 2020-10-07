@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.woff2') format('woff2'),
+        url('Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.woff2') format('woff2'),
+        url('Gilroy-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Extrabold.woff2') format('woff2'),
+        url('Gilroy-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+/*Обнуление*/
+*{
+padding:0;
+margin: 0;
+border: 0;
+}
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus,
+:active{outline: none;
+}
+a:focus,a:active{outline: none;
+}
+nav,footer,header,aside{display: block;
+}
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;
+}
+input::-ms-clear{display: none;
+}
+button{cursor: pointer;
+}
+button::-moz-focus-inner {padding: 0;border: 0;
+}
+a, a:visited{text-decoration: none;
+}
+a:hover{text-decoration: none;
+}
+ul li{list-style: none;
+}
+img{vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;
+}
+/*--------------------*/
+
+body {
+    font-family: 'Gilroy';
+    background: #fff;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    /* padding: 0px 20px; */
+    /* border: 1px solid black; */
+}
+
+.header {
+    padding: 20px 0px 150px 0px;
+    background: url(../img/block/bg.jpg) center / cover no-repeat;
+}
+
+.header__fix {
+    position: fixed;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__mainlogo {
+    margin: 0px 18px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    font-size: 52px;
+    font-weight: 700;
+    color:rgba(225, 225, 225, 1);
+}
+
+.header__palka {
+    display: inline-block;
+    width: 4px;
+    height: 40px;
+    background: rgba(137, 175, 239, 1);
+}
+
+.header__text {
+    margin: 0px 0px 0px 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 193px;
+    font-size: 14px;
+    /* font-weight: 500; */
+}
+
+.header__links {
+    display: inline-block;
+    margin: 0px 0px 0px 60px;
+	 font-weight: 500;
+	 
+}
+
+
+.header__linksss:hover {
+	text-decoration: underline;
+}
+
+.header__linkss:hover {
+	text-decoration: underline;
+}
+
+.header__link {
+    margin: 0px 0px 0px 18px;
+    display: block;
+
+
+
+
+
+
+}
+
+.header__link--green {
+    background:  url(../img/link/whatsapp-logo.png) center no-repeat;
+    background-color: rgba(45, 208, 56, 1);
+    display: inline-block;
+    width:43px;
+    height: 43px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 25px rgba(45, 208, 56, 0.497678);
+    transition: .2s linear;
+
+
+}
+
+.header__link--blue {
+    background: url(../img/link/telegram.png) center no-repeat;
+    background-color: rgba(91, 186, 240, 1);
+    display: inline-block;
+    width:43px;
+    height: 43px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+    transition: .2s linear;
+    border: 3px solid transparent;
+}
+
+.header__link--purple {
+    background: url(../img/link/viber-logo.png) center no-repeat;
+    background-color: rgba(123, 81, 157, 1);
+    display: inline-block;
+    width:43px;
+    height: 43px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 25px rgba(123, 81, 157, 0.503797);
+    transition: .2s linear;
+    overflow: hidden;
+
+}
+
+.header__link--green:hover {
+    background: url(../img/link/wat.svg) 50% / 44px no-repeat;
+    font-size: 20px;
+    border: 3px solid rgba(107, 142, 35);
+    box-shadow: 0px 8px 25px rgba(91, 186, 240, 0.5);
+    transform: scale(1.3);
+}
+
+.header__link--blue:hover {
+    background: url(../img/link/tel.svg) 50% / 44px no-repeat;
+    font-size: 20px;
+    border: 3px solid rgba(91, 186, 240, 1);
+    box-shadow: 0px 0px 35px rgba(91, 186, 240, 0.5);
+    transform: scale(1.3);
+}
+
+.header__link--purple:hover {
+    background: url(../img/link/viber.svg) 50% / 44px no-repeat;
+    font-size: 20px;
+    border: 3px solid rgba(123, 81, 157, 1);
+    box-shadow: 0px 0px 35px rgba(91, 186, 240, 0.5);
+
+    transform: scale(1.3);
+
+}
+
+.header__text {
+    display: inline-block;
+}
+
+.header__info {
+    display: inline-block;
+    margin: 0px 0px 0px 60px;
+
+}
+
+.header__info--number a {
+	position: relative;
+    padding: 0px 0px 0px 20px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+}
+
+.header__info--number {
+	position: relative;
+}
+
+
+.header__info--number::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -5px;
+	 background: url(../img/infp/call-answer.png) center / auto no-repeat;
+	 width: 18px;
+	 height: 17px;
+	 z-index: 1;
+
+}
+
+.header__info--mail {
+	 padding: 8px 0px 0px 30px;
+	 position: relative;
+}
+
+.header__info--mail a {
+    padding:7px 0px 0px 30px;
+    font-size: 15px;
+    color: #000;
+}
+
+.header__info--mail::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 31px;
+	 background: url(../img/infp/mail-black-envelope-symbol.png) center / auto no-repeat;
+	 width: 18px;
+	 height: 17px;
+	 z-index: 1;
+}
+
+.header__button {
+    margin: 0px 0px 0px 71px;
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+    vertical-align: top;
+}
+
+.header__btn {
+    display: inline-block;
+    padding: 13px 28px;
+    /* margin: 10px 0px; */
+    color: #fff;
+    /* font-weight: 600; */
+    font-size: 18px;
+    background: linear-gradient(90deg, #F6BD60 0%, #E88952 100%);
+    box-shadow: 0px 8px 18px rgba(242, 147, 81, 0.450503);
+    border-radius: 3px;
+    transition: .1s linear;
+
+
+}
+
+.header__btn:hover {
+    background: linear-gradient(90deg, #E88952 0%, #F6BD60 100%);
+
+}
+
+.header__btn:active {
+    /* transform: translateY(1px); */
+    transform: scale(0.95);
+}
+
+
+.header__drop {
+    display: inline-block;
+    margin: 40px 0px 10px 0px;
+}
+
+.header__linkss {
+
+    padding: 0px 56px 0px 0px;
+    /* font-weight: 600; */
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.header__linksss {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.header__img {
+    display: inline-block;
+    vertical-align: top;
+	 margin: 16px 0px -5px 470px;
+	 position: relative;
+}
+
+.header__img img {
+	position: absolute;
+	top: 3px;
+	left: -15px;
+	z-index: 1;
+}
+
+.header__h {
+    margin: 123px 0px 0px 0px;
+    min-width: 675px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+    color: #000;
+}
+
+.header__p {
+    min-width: 675px;
+    margin: 32px 0px 0px 0px;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.header__p span {
+    font-weight: 700;
+}
+
+.header__text--ttt {
+    margin: 0px 0px 0px 0px;
+}
+
+.header__buttons {
+
+margin: 45px 0px 0px 0px;
+}
+
+.header__btn {}
+
+.header__btn--blue {
+    /* font-weight: 600; */
+    font-size: 16px;
+    padding: 16px 50px;
+    background: linear-gradient(90deg, #87AFF1 0%, #6C80CB 100%, #6C80CB 100%);
+    box-shadow: 0px 12px 20px rgba(132, 170, 237, 0.454846);
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.header__btn--blue:hover {
+    background: linear-gradient(90deg, #87AFF1 0%, #6C80CB 100%, #87AFF1 100%);
+}
+
+.header__block {
+    padding: 130px 0px 0px 0px;
+}
+
+
